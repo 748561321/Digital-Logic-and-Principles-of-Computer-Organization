@@ -1,0 +1,235 @@
+sys.c: In function 'getch':
+sys.c:433:16: warning: array subscript has type 'char' [-Wchar-subscripts]
+  433 |     c = key_buf[head];
+      |                ^
+sys.c:434:12: warning: array subscript has type 'char' [-Wchar-subscripts]
+  434 |     key_buf[head] = '\0';
+      |            ^
+sys.c: In function 'deal_com':
+sys.c:936:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  936 |         putstr("===================COMMAND HELP=======================\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:937:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  937 |         putstr("help     : print COMMAND HELP\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:938:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  938 |         putstr("hello    : print hello\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:939:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  939 |         putstr("time     : print time\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:940:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  940 |         putstr("fib n    : calculate fib(n)\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:941:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  941 |         putstr("cal expr : calculate expression\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:942:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  942 |         putstr("clear    : clear the screen\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:943:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  943 |         putstr("led n    : turn on/off the led\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:944:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  944 |         putstr("g2048    : play the game 2048\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:945:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  945 |         putstr("snake    : play the game snake\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:946:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  946 |         putstr("chess    : play the game chess\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:947:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  947 |         putstr("russia   : play the game russia\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:948:16: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  948 |         putstr("======================================================\n");
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:972:8: warning: implicit declaration of function 'russia' [-Wimplicit-function-declaration]
+  972 |        russia();
+      |        ^~~~~~
+sys.c: In function 'g2048':
+sys.c:1374:18: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1374 |       putstr(wall[i&3]);
+      |              ~~~~^~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c: In function 'snake':
+sys.c:1430:14: warning: conversion from 'int' to 'char' may change value [-Wconversion]
+ 1430 |     for (C = m[1] = -1; C - 27; sleep())
+      |              ^
+sys.c:1436:61: warning: suggest parentheses around arithmetic in operand of '^' [-Wparentheses]
+ 1436 |             C - 65 && C - 68 && C - 83 && C - 87 || (C ^ c) & 20 ^ 4 && (c = C);
+      |                                                     ~~~~~~~~^~~~
+sys.c:1436:40: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 1436 |             C - 65 && C - 68 && C - 83 && C - 87 || (C ^ c) & 20 ^ 4 && (c = C);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+sys.c:1436:70: warning: value computed is not used [-Wunused-value]
+ 1436 |             C - 65 && C - 68 && C - 83 && C - 87 || (C ^ c) & 20 ^ 4 && (c = C);
+      |                                                                      ^~
+sys.c:1441:12: warning: operation on '*p' may be undefined [-Wsequence-point]
+ 1441 |         *p = (-- * p + W) % W;
+      |         ~~~^~~~~~~~~~~~~~~~~~
+sys.c: In function 'chess':
+sys.c:1493:16: warning: value computed is not used [-Wunused-value]
+ 1493 |         c - 68 || ++z, c - 65 || --z, c - 83 || (z += W), c - 87 || (z -= W);
+      |                ^~
+sys.c:1497:66: warning: value computed is not used [-Wunused-value]
+ 1497 |                 sum(z, j, &W, &S, m) + sum(z, -j, &W, &S, m) > 3 && (r ^= 3, i = r += 4);
+      |                                                                  ^~
+sys.c:1503:24: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1503 |                 putstr(">");
+      |                        ^~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1508:24: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1508 |                 putstr(" ");
+      |                        ^~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1512:24: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1512 |                 putstr("0");
+      |                        ^~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1516:24: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1516 |                 putstr("X");
+      |                        ^~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1520:24: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1520 |                 putstr(" ");
+      |                        ^~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1531:22: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1531 |               putstr(" ");
+      |                      ^~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1536:20: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1536 |             putstr("\nWhite ");
+      |                    ^~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1538:20: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1538 |             putstr("\nBlack ");
+      |                    ^~~~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1540:20: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1540 |             putstr("win!\n");
+      |                    ^~~~~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c: At top level:
+sys.c:1553:5: error: conflicting types for 'move'
+ 1553 | int move(int* v, int l)
+      |     ^~~~
+sys.c:1304:6: note: previous definition of 'move' was here
+ 1304 | void move(int i, int v, int map[])
+      |      ^~~~
+sys.c: In function 'move':
+sys.c:1555:60: warning: value computed is not used [-Wunused-value]
+ 1555 |  Get(*v += l)(j < 0 || j >= W || k2 >= H || m[k2 * W + j]) && (c = 0);
+      |                                                            ^~
+sys.c: At top level:
+sys.c:1558:6: warning: conflicting types for 'russia'
+ 1558 | void russia()
+      |      ^~~~~~
+sys.c:972:8: note: previous implicit declaration of 'russia' was here
+  972 |        russia();
+      |        ^~~~~~
+sys.c: In function 'russia':
+sys.c:1567:10: warning: value computed is not used [-Wunused-value]
+ 1567 |   c ^ 65 || move(&X, -1), c ^ 68 || move(&X, 1), c ^ 83 || move(&Y, 1);
+      |          ^~
+sys.c:1568:43: warning: suggest parentheses around arithmetic in operand of '^' [-Wparentheses]
+ 1568 |   c ^ 87 || (i = T < 8 ? 1 : 3, move(&T, T& i^ i ? 1 : -i));
+      |                                          ~^~~
+sys.c:1568:10: warning: value computed is not used [-Wunused-value]
+ 1568 |   c ^ 87 || (i = T < 8 ? 1 : 3, move(&T, T& i^ i ? 1 : -i));
+      |          ^~
+sys.c:1569:16: warning: value computed is not used [-Wunused-value]
+ 1569 |   Get(++d - 10 || (d = 0, c = 1, move(&Y, 1)))
+      |                ^~
+sys.c:1549:21: note: in definition of macro 'Get'
+ 1549 | #define Get(C) for (C, i = n[T]; j = X + i % 4, k2 = Y + i / 4 % 4, i; i >>= 4)
+      |                     ^
+sys.c:1571:22: warning: value computed is not used [-Wunused-value]
+ 1571 |   if (c == -1 && !(Y || (c = 27), T = rand() % 20, Y = X = 0))
+      |                      ^~
+sys.c:1572:49: warning: value computed is not used [-Wunused-value]
+ 1572 |    for (j = W, i = S - 1; j -= m[i], i; i-- % W || (j = W))
+      |                                                 ^~
+sys.c:1573:12: warning: value computed is not used [-Wunused-value]
+ 1573 |     for (j || (k2 = i += W); !j && (--k2 >= W); m[k2] = m[k2 - W]);
+      |            ^~
+sys.c:1579:18: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1579 |           putstr("[]");
+      |                  ^~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1583:18: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1583 |           putstr("  ");
+      |                  ^~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+sys.c:1587:18: warning: passing argument 1 of 'putstr' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1587 |           putstr("|\n");
+      |                  ^~~~~
+sys.c:401:19: note: expected 'char *' but argument is of type 'const char *'
+  401 | void putstr(char *str)
+      |             ~~~~~~^~~
+make: *** [sys.o] Error 1
